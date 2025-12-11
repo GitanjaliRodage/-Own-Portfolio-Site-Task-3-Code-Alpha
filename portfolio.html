@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            background: #111;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffb400;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ffb400;
+            color: black;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #e09d00;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            gap: 30px;
+            padding: 50px;
+        }
+
+        .about img {
+            width: 180px;
+            border-radius: 50%;
+        }
+
+        .about-text {
+            font-size: 18px;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Form */
+        form {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #ffb400;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e09d00;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 700px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span style="color:#ffb400">Gitanjali Sunil Rodage</span></h1>
+        <p>Web Developer | Designer | Student</p>
+        <a class="btn" href="#projects">See My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="https://via.placeholder.com/180" alt="profile">
+            <div class="about-text">
+                <p>Hello! I'm a passionate learner who loves building websites and applications.</p>
+                <p>I enjoy HTML, CSS, JavaScript, data science, and problem-solving.</p>
+                <p>This portfolio showcases my projects and skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Calculator</h3>
+                <p>A simple calculator built using HTML, CSS & JS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Image Gallery</h3>
+                <p>Responsive gallery with lightbox and filters.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Data Analysis</h3>
+                <p>Python project analyzing datasets visually.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me:9850083219</h2>
+
+        <form>
+            <input type="text" placeholder="Gitanjali Sunil Rodage">
+            <input type="email" placeholder="rgitanjali454@gmail.com">
+            <textarea rows="4" placeholder="I’m an aspiring AI & DS Engineer pursuing my BTech at VPKBIET.
+                                            I love exploring machine learning, data analysis, and web development.
+                                            My goal is to build impactful projects that solve real-world problems."></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 My Portfolio | All Rights Reserved
+    </footer>
+
+</body>
+</html>
